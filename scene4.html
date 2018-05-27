@@ -1,0 +1,75 @@
+<html>
+  <head>  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable">
+    <title>scene4</title>
+
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <!-- <script src="https://unpkg.com/super-hands/dist/super-hands.js"></script> -->
+    <!-- <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v2.1.0/dist/aframe-physics-system.min.js"></script> -->
+    <script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.js"></script>
+    <!-- <script src="https://dist.3d.io/3dio-js/1.x.x/3dio.min.js"></script> -->
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@4.0.0-beta8/dist/aframe-animation-component.min.js"></script>
+    <!-- <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script> -->
+    <script type="text/javascript" src="js/progress-bar.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/scenes/scene4.js"></script>
+    <a-scene roof-top physics>
+      <a-assets>
+        <a-asset-item id="solar-panel" src="model/solar/model.dae"></a-asset-item>
+        <a-mixin id="gazer" collision-filter="collisionForces: false"></a-mixin>
+        <a-mixin id="pointer" collision-filter="collisionForces: false" >
+        </a-mixin>
+        <a-mixin id="ctrlr" physics-collider collision-filter="collisionForces: false" super-hands="colliderEvent: collisions; colliderEventProperty: els; colliderEndEvent: collisions; colliderEndEventProperty: clearedEls">
+        </a-mixin>
+      </a-assets>
+
+      <a-entity id="panels">
+
+        <a-collada-model class="panel" src="#solar-panel" position="0 0 -3.48" rotation="30 105 0" collada-model="model/solar/model.dae">
+          <a-plane material="color:#000000;side:double" geometry="" position="-0.497 0.23863325790209772 -0.5751731014613677" rotation="113.078 0.031 90.556" scale="1.302 1.005 1"></a-plane>
+        </a-collada-model>
+
+      </a-entity>
+      <a-plane src="img/rotate_angle.png" id="rotate-button" scale="2 1.3" position="-2.7 2.375 -3.792"></a-plane>
+      <a-plane src="img/rotate_direction.png" id="vertical-rotate-button" scale="2 1.3" position="2.2 2.375 -3.792"></a-plane>
+      
+      <a-plane src="img/ok.png" id="ok-btn" visible="" position="2.65 0.375 -3.792" material="" geometry=""></a-plane>
+
+      <a-sky src="bg/city.jpg" rotation="0 90 -5"></a-sky>
+      <a-image src="img/compass_black.png" rotation="-90 0 0" scale="3 3 3" position="0 0.2 0"></a-image>
+    
+      <a-sphere id="sun" color="#FFFF00" rotation="-45.264 90.012 -93.449" scale="0.7 0.7 0.7" position="9.734 10.5 0" animation__sunset="property: position; startEvents: sunset; to: -10 11 0; dur: 10000" animation__sunrotation="property: rotation; startEvents: sunset; to: 45.264 90.012 -93.449; dur: 10000"></a-sphere>
+
+      <a-plane src="img/stone.jpg" position="0 0 -1.609" rotation="-90.01166961505233 0 0" scale="18.039 10.125 10.125"></a-plane>
+
+      <a-camera camera="userHeight: 1.6" look-controls="enabled:true;">
+        
+        <!-- <a-plane position="-1.5 0.7 -3.435" material="opacity:0.5;emissive:#fff" height="100" width="100" geometry="height:0.43;width:1.97">
+          <a-text value="DATE : 06/22" text="align:left;color:black;" position="-0.95 0 0"></a-text>
+        </a-plane>
+        <a-plane position="-1.5 0.2 -3.435" material="opacity:0.5;emissive:#fff" height="100" width="100" geometry="height:0.43;width:1.97">
+          <a-text value="25.04 N, 121.53 E" text="align:left;color:black;" position="-0.95 0 0"></a-text>
+        </a-plane> -->
+
+        <a-cursor></a-cursor>
+        <!-- <a-plane id="scene4-intro" height="2" width="3" material="opacity:0;side:double;color:black" visible="false" scale="0.19 0.197 0.528" position="0 0 -0.464">
+          <a-entity geometry="primitive:plane" scale="2.8 1.855 1.383" position="0 0 0.02" material="shader:gif; src:url(img/intro/intros4.gif);" gif=""></a-entity>
+        </a-plane> -->
+        <a-text id="scoreboard" visible="false" position="0 0 -2.500" text="color:red;align:center"></a-text>
+        <a-entity progress-bar position="0 -0.5 -2.500"></a-entity>
+
+        <a-text id="rightangle" visible="true" position="1.5 1.5 -3.500" text="color:red;align:center" value="30 degrees"></a-text>
+      </a-camera>
+
+      <a-box id="teleport-range" position="0.159 0.05 0.048" material="visible:false" geometry="depth:4.53;height:0.01;width:4.67" scale="1.656 1 1.308"></a-box>
+    </a-scene>
+  </body>
+</html>

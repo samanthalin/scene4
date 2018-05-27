@@ -1,0 +1,14 @@
+# OBJ Material Export by Luxion KeyShot
+
+newmtl Aluminum Brushed
+Kd 0.5 0.5 0.5
+
+newmtl Brass Brushed
+Kd 0.5 0.5 0.5
+
+newmtl Copper Brushed
+Kd 0.5 0.5 0.5
+
+newmtl Paint Gloss Black
+Kd 0.027451 0.027451 0.027451
+Ks 0 0 0

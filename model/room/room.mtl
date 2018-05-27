@@ -1,0 +1,252 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 10.03.2018 03:47:33
+
+newmtl 10___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\images.jpg
+	map_Kd maps\images.jpg
+
+newmtl 08___Default
+	Ns 58.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.8730 0.8730 0.8730
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\10.jpg
+	map_Kd maps\10.jpg
+	map_Ke maps\Map__614327483_RGB Tint.tga
+	map_refl maps\Map__614327482_Raytrace.tga
+
+newmtl 05___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\213756flzeree8rjrk35eh.jpg
+	map_Kd maps\213756flzeree8rjrk35eh.jpg
+	map_bump maps\213756flzeree8rjrk35eh.jpg
+	bump maps\213756flzeree8rjrk35eh.jpg
+
+newmtl wire_213154229
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8353 0.6039 0.8980
+	Kd 0.8353 0.6039 0.8980
+	Ks 0.3500 0.3500 0.3500
+
+newmtl 01___Default
+	Ns 60.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.9255 0.8275 0.6706
+	Kd 0.9255 0.8275 0.6706
+	Ks 0.2430 0.2430 0.2430
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\Map__0_Noise.tga
+	map_Kd maps\Map__0_Noise.tga
+
+newmtl 06___Default
+	Ns 40.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.4680 0.4680 0.4680
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\43b9690151554fe2f00ca9f4b08def48.jpg
+	map_Kd maps\43b9690151554fe2f00ca9f4b08def48.jpg
+	map_bump maps\fondo-abstracto-con-un-patron-3d_1319-68.jpg
+	bump maps\fondo-abstracto-con-un-patron-3d_1319-68.jpg
+
+newmtl wire_227152152
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8902 0.5961 0.5961
+	Kd 0.8902 0.5961 0.5961
+	Ks 0.3500 0.3500 0.3500
+
+newmtl 12___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0392 0.1333 0.0235
+	Kd 0.0392 0.1333 0.0235
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl 14___Default
+	Ns 27.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1961 0.1961 0.1961
+	Kd 0.1961 0.1961 0.1961
+	Ks 0.0540 0.0540 0.0540
+	Ke 0.0000 0.0000 0.0000
+
+newmtl 15___Default
+	Ns 35.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.9725 0.9725 0.9725
+	Kd 0.9725 0.9725 0.9725
+	Ks 0.5850 0.5850 0.5850
+	Ke 0.9725 0.9725 0.9725
+
+newmtl 07___Default
+	Ns 37.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8471 0.7961 0.6902
+	Kd 0.8471 0.7961 0.6902
+	Ks 0.5490 0.5490 0.5490
+	Ke 0.0000 0.0000 0.0000
+
+newmtl 02___Default
+	Ns 19.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.1890 0.1890 0.1890
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\d9be71fd518b18ec7721881d05557cb7_hd.jpg
+	map_Kd maps\d9be71fd518b18ec7721881d05557cb7_hd.jpg
+	map_bump maps\d9be71fd518b18ec7721881d05557cb7_hd.jpg
+	bump maps\d9be71fd518b18ec7721881d05557cb7_hd.jpg
+
+newmtl 03___Default
+	Ns 34.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\1.jpg
+	map_Kd maps\1.jpg
+	map_bump maps\1.jpg
+	bump maps\1.jpg
+
+newmtl 04___Default
+	Ns 41.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\0.jpg
+	map_Kd maps\0.jpg
+	map_bump maps\0.jpg
+	bump maps\0.jpg
+
+newmtl FrontCol
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Foregrou
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl 09___Default
+	Ns 29.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0810 0.0810 0.0810
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\800px_COLOURBOX1726023.jpg
+	map_Kd maps\800px_COLOURBOX1726023.jpg
+
+newmtl wire_255255255
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_184228153
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.7216 0.8941 0.6000
+	Kd 0.7216 0.8941 0.6000
+	Ks 0.3500 0.3500 0.3500
